@@ -7,7 +7,7 @@ async function list(req, res) {
     const data = (await service.listShowings()).slice(0,16);
     res.status(200).json({ data });
   } else {
-    const data = (await service.list()).slice(0,16);
+    const data = (await service.list());
     res.status(200).json({ data });
   }
 }
